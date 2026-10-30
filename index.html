@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical & Electronic | Dukaanka Qalabka Casriga ah & Elektaroonigga</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice-bar">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+      <div class="notice-contact">
+        <span><i class="fa-solid fa-phone"></i> +252 61 500 0000</span>
+        <span><i class="fa-solid fa-envelope"></i> info@technical-electronic.so</span>
+        <span><i class="fa-solid fa-location-dot"></i> Mogadishu, Somalia</span>
+      </div>
+      <div class="notice-promo">
+        <span><i class="fa-solid fa-bolt"></i> Qiimo Dhimis Gaar ah: Ilaa <strong>25% Off</strong> Qalabka Elektaroonigga ah!</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <div class="logo-text">
+            <span>Technical</span>&<span>Electronic</span>
+            <span class="logo-tagline">Qalabka & Farsamada Casriga</span>
+          </div>
+        </a>
+
+        <!-- Live Search -->
+        <div class="search-container">
+          <div class="search-input-wrapper">
+            <input 
+              type="text" 
+              id="search-input" 
+              class="search-input" 
+              placeholder="Raadi qalab: Laptop, iPhone, Arduino, Drone..." 
+              autocomplete="off"
+            >
+            <button class="search-icon-btn" id="search-btn" title="Raadi">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Header Actions -->
+        <div class="nav-actions">
+          
+          <!-- Wishlist Button -->
+          <button class="action-btn" id="wishlist-toggle-btn" title="Waxyaabaha aad jecleysatay">
+            <i class="fa-regular fa-heart"></i>
+            <span class="action-badge" id="wishlist-badge">0</span>
+          </button>
+
+          <!-- Cart Button -->
+          <button class="cart-btn-label" id="cart-toggle-btn" title="Fur Gaariga Iibsiga">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Gaariga</span>
+            <span class="action-badge" id="cart-badge">0</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-banner">
+          <div class="hero-info">
+            <span class="hero-tag">
+              <i class="fa-solid fa-certificate"></i> Dukaanka 1-aad ee Qalabka Farsamada
+            </span>
+            <h1 class="hero-title">
+              Tiknoolojiyadda Casriga ah & <span>Qalabka Elektaroonigga</span>
+            </h1>
+            <p class="hero-desc">
+              Ka dukaameyso qalab tayo sare leh: Kumbuyuutarro awood badan, Taleefannada ugu dambeeyay, Qalabka Robotikada (Arduino, Raspberry Pi), qalabka alxanka iyo agabka farsamada oo dammaanad buuxda leh.
+            </p>
+            <div class="hero-actions">
+              <a href="#products-section" class="btn-primary">
+                <i class="fa-solid fa-bag-shopping"></i> Dukaamayso Hadda
+              </a>
+              <button class="btn-outline" onclick="filterByCategory('electronics')">
+                <i class="fa-solid fa-microchip"></i> Qalabka Elektaroonigga
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-img-wrap">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Tech Motherboard and Hardware">
+              <div class="hero-badge-float">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <strong>2 Sano Dammaanad</strong>
+                  <span>Alaab Asal ah (100% Genuine)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Features -->
+    <section class="container">
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="feature-text">
+            <h4>Gaarsiin Degdeg ah</h4>
+            <p>Ilaa albaabkaaga 24 saac gudahood</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="feature-text">
+            <h4>Alaab Asal ah</h4>
+            <p>100% Qalab tayo leh & dammaanad</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <div class="feature-text">
+            <h4>Adeeg Lacag-bixin Fudud</h4>
+            <p>EVC Plus, Zaad, Sahal & Kaarka</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="feature-text">
+            <h4>Taageero Farsamo 24/7</h4>
+            <p>Khabiirro diyaar u ah inay ku caawiyaan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Products & Categories Section -->
+    <section class="container" id="products-section">
+      
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">
+            <i class="fa-solid fa-cubes"></i> Qeybaha Alaabta & Qalabka
+          </h2>
+          <p class="section-subtitle">Dooro qeybta aad rabto si aad u hesho qalabka ku habboon baahidaada</p>
+        </div>
+      </div>
+
+      <!-- Categories Pills (Qeybo Qeybo) -->
+      <div class="categories-bar" id="categories-bar">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Controls: Results count & Sort -->
+      <div class="controls-bar">
+        <div class="results-count">
+          Waxaa la helay: <strong id="product-count">0</strong> alaab
+        </div>
+        <div class="sort-wrapper">
+          <label for="sort-select"><i class="fa-solid fa-arrow-down-wide-short"></i> Kala xul:</label>
+          <select id="sort-select" class="sort-select">
+            <option value="featured">Kala horeyn caadi ah</option>
+            <option value="price-low">Qiimaha: Ugu jaban horta</option>
+            <option value="price-high">Qiimaha: Ugu qaalisan horta</option>
+            <option value="rating">Qiimeynta ugu sareysa (Rating)</option>
+            <option value="name">Magaca (A - Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Cards Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be injected here via JavaScript -->
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       SLIDE-OVER CART DRAWER
+  =================================================================== -->
+  <div class="cart-overlay" id="cart-overlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3><i class="fa-solid fa-cart-shopping"></i> Gaarigaaga Iibsiga</h3>
+        <button class="cart-close-btn" id="cart-close-btn" title="Xir Gaariga">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="cart-items-body" id="cart-items-body">
+        <!-- Cart items rendered dynamically -->
+      </div>
+
+      <div class="cart-footer" id="cart-footer">
+        <div class="cart-summary-line">
+          <span>Wadarta Alaabta:</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <div class="cart-summary-line">
+          <span>Gaarsiinta (Delivery):</span>
+          <span style="color: #10b981; font-weight: 600;">Bilaash (Free)</span>
+        </div>
+        <div class="cart-summary-line total">
+          <span>Isugeyn:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+
+        <button class="btn-checkout" id="btn-proceed-checkout">
+          <i class="fa-solid fa-circle-check"></i> U Gudub Iibsiga (Checkout)
+        </button>
+        <span class="clear-cart-link" id="btn-clear-cart">Faaruqi Gaariga</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       CHECKOUT MODAL (ADEEG IIBSI DHAMEYSTIRAN)
+  =================================================================== -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-credit-card"></i> Dhamaystir Dalabkaaga (Checkout)</h3>
+        <button class="modal-close-btn" id="checkout-close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form id="checkout-form">
+          
+          <h4 style="font-size: 1.05rem; margin-bottom: 14px; color: #fff;">
+            <i class="fa-solid fa-user"></i> 1. Xogtaada Qofka Dalbanaya
+          </h4>
+          
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="cust-name">Magacaaga oo buuxa *</label>
+              <input type="text" id="cust-name" required placeholder="Tusaale: Axmed Cali Xasan">
+            </div>
+
+            <div class="form-group">
+              <label for="cust-phone">Taleefankaaga Mobile-ka *</label>
+              <input type="tel" id="cust-phone" required placeholder="Tusaale: +252 61 2345678">
+            </div>
+
+            <div class="form-group">
+              <label for="cust-city">Magaalada *</label>
+              <select id="cust-city" required>
+                <option value="Mogadishu">Muqdisho</option>
+                <option value="Hargeisa">Hargeysa</option>
+                <option value="Garowe">Garoowe</option>
+                <option value="Kismayo">Kismaayo</option>
+                <option value="Baidoa">Baydhabo</option>
+                <option value="Bosaso">Boosaaso</option>
+                <option value="Other">Magaalo Kale</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cust-district">Degmada & Xaafadda *</label>
+              <input type="text" id="cust-district" required placeholder="Tusaale: Hodan, Taleex">
+            </div>
+
+            <div class="form-group form-full">
+              <label for="cust-notes">Faahfaahin dheeraad ah ama Tilmaamaha Gaarsiinta (Ikhtiyaari)</label>
+              <textarea id="cust-notes" rows="2" placeholder="Guri nambarka, meel caan ah oo ku dhow..."></textarea>
+            </div>
+          </div>
+
+          <!-- Payment Options -->
+          <div class="payment-methods-title">
+            <i class="fa-solid fa-wallet"></i> 2. Dooro Habka Lacag-Bixinta
+          </div>
+          
+          <div class="payment-grid">
+            
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="EVC Plus" checked>
+              <div class="payment-card">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>EVC Plus</span>
+                <small style="color: var(--text-dim); font-size: 0.7rem;">Hormuud</small>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="Zaad Service">
+              <div class="payment-card">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                <span>Zaad Service</span>
+                <small style="color: var(--text-dim); font-size: 0.7rem;">Telesom</small>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="Sahal Service">
+              <div class="payment-card">
+                <i class="fa-solid fa-sim-card"></i>
+                <span>Sahal Service</span>
+                <small style="color: var(--text-dim); font-size: 0.7rem;">Golis</small>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="Bank Card">
+              <div class="payment-card">
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Kaarka Bangiga</span>
+                <small style="color: var(--text-dim); font-size: 0.7rem;">Visa / Mastercard</small>
+              </div>
+            </label>
+
+            <label class="payment-option" style="grid-column: span 2;">
+              <input type="radio" name="payment-method" value="Cash On Delivery">
+              <div class="payment-card">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <span>Lacagta bixi marka aad hesho</span>
+                <small style="color: var(--text-dim); font-size: 0.7rem;">Cash On Delivery (COD)</small>
+              </div>
+            </label>
+
+          </div>
+
+          <!-- Order Summary Inside Checkout -->
+          <div class="checkout-order-summary">
+            <h4>
+              <span>Wadarta Dalabkaaga:</span>
+              <span id="checkout-total-price" style="color: var(--accent);">$0.00</span>
+            </h4>
+            <div class="checkout-items-list" id="checkout-items-list">
+              <!-- Dynamically populated -->
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-lock" style="color: #10b981;"></i>
+              Xogtaadu waa mid ammaan ah oo sir ah.
+            </div>
+          </div>
+
+          <button type="submit" class="btn-checkout" id="btn-submit-order">
+            <i class="fa-solid fa-shield-check"></i> Xaqiiji & Dalbo Hadda
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       ORDER SUCCESS & INVOICE MODAL
+  =================================================================== -->
+  <div class="modal-overlay" id="invoice-modal">
+    <div class="modal-box">
+      <div class="invoice-box">
+        <div class="invoice-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h2 style="font-size: 1.6rem; color: #fff; margin-bottom: 8px;">Mahadsanid! Dalabkaagu Wuu Guuleystay</h2>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+          Waan helnay dalabkaaga. Kooxdayada farsamada ayaa si degdeg ah kuula soo xiriiri doonta.
+        </p>
+
+        <div class="invoice-details" id="invoice-details">
+          <!-- Dynamically populated with order receipt -->
+        </div>
+
+        <div style="display: flex; gap: 12px; justify-content: center; margin-top: 20px;">
+          <button class="btn-primary" onclick="window.print()">
+            <i class="fa-solid fa-print"></i> Daabac Rasiidka
+          </button>
+          <button class="btn-outline" id="btn-invoice-done">
+            <i class="fa-solid fa-store"></i> Ku Noqo Dukaanka
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       QUICK VIEW PRODUCT MODAL
+  =================================================================== -->
+  <div class="modal-overlay" id="quick-view-modal">
+    <div class="modal-box" style="max-width: 800px;">
+      <div class="modal-header">
+        <h3 id="qv-title">Faahfaahinta Alaabta</h3>
+        <button class="modal-close-btn" id="qv-close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="quick-view-body">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       WISHLIST MODAL
+  =================================================================== -->
+  <div class="modal-overlay" id="wishlist-modal">
+    <div class="modal-box" style="max-width: 600px;">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-heart" style="color: #ef4444;"></i> Waxyaabaha Aad Jecleysatay (Wishlist)</h3>
+        <button class="modal-close-btn" id="wishlist-close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="wishlist-items-container" style="display: flex; flex-direction: column; gap: 12px;">
+          <!-- Dynamically filled -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ===================================================================
+       FOOTER
+  =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: About -->
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom: 14px;">
+            <div class="logo-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="logo-text"><span>Technical</span>&<span>Electronic</span></div>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 18px;">
+            Dukaankaaga koowaad ee qalabka farsamada, kombuyuutarrada, taleefannada, qaybaha robotikada iyo dhammaan alaabta elektaroonigga ah. Tayo la hubiyay & adeeg hufan.
+          </p>
+          <div style="display: flex; gap: 10px; color: var(--accent);">
+            <a href="#" class="action-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="action-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="action-btn"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="action-btn"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="action-btn"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Categories -->
+        <div class="footer-col">
+          <h4>Qaybaha Dukaanka</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="filterByCategory('laptops')">Laptops & Kumbuyuutar</a></li>
+            <li><a href="javascript:void(0)" onclick="filterByCategory('smartphones')">Taleefanno & Tablets</a></li>
+            <li><a href="javascript:void(0)" onclick="filterByCategory('audio')">Qalabka Dhawaqa</a></li>
+            <li><a href="javascript:void(0)" onclick="filterByCategory('electronics')">Qeybaha Elektaroonigga</a></li>
+            <li><a href="javascript:void(0)" onclick="filterByCategory('accessories')">Agabka & Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care -->
+        <div class="footer-col">
+          <h4>Adeegga Macmiilka</h4>
+          <ul class="footer-links">
+            <li><a href="#products-section">Sida loo dalbado</a></li>
+            <li><a href="#products-section">Dammaanadda Alaabta</a></li>
+            <li><a href="#products-section">Soo celinta Alaabta</a></li>
+            <li><a href="#products-section">Shuruudaha & Qawaaniinta</a></li>
+            <li><a href="#products-section">Nala Soo Xiriir</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col footer-newsletter">
+          <h4>Wararkii Ugu Dambeeyay</h4>
+          <p>Kusoo biir liiska dadka hela qiimo dhimista iyo alaabta cusub ee elektaroonigga ah:</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Waad ku mahadsan tahay ku biiristaada!', 'success'); this.reset();">
+            <input type="email" class="newsletter-input" required placeholder="Geli Email-kaaga...">
+            <button type="submit" class="newsletter-btn">Biir</button>
+          </form>
+          <div style="margin-top: 18px;">
+            <span style="font-size: 0.8rem; color: var(--text-dim); display: block; margin-bottom: 6px;">Hababka Lacag-bixinta ee La Aqbalo:</span>
+            <div class="payment-badges">
+              <i class="fa-solid fa-mobile-screen" title="EVC Plus / Zaad / Sahal"></i>
+              <i class="fa-brands fa-cc-visa" title="Visa"></i>
+              <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+              <i class="fa-solid fa-money-bill-wave" title="Cash on Delivery"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong>Technical & Electronic Store</strong>. Dhammaan xuquuqdu way dhowran tahay.
+        </div>
+        <div style="display: flex; gap: 16px;">
+          <span>Qalab Asal ah</span>
+          <span>•</span>
+          <span>Dammaanad Rasmi ah</span>
+          <span>•</span>
+          <span>Gaarsiin Degdeg ah</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
